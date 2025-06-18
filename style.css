@@ -1,0 +1,39 @@
+body{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url("simon-backgroung.gif") no-repeat center center fixed;
+  background-size: cover; 
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden; 
+}
+.btn {
+    height: 250px;
+    width: 250px;
+    border-radius: 35%;
+    border :10px solid black;
+    margin: 1rem;
+
+}
+h1{
+    color: #cff223;
+    margin-top: 100px;
+
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color:rgb(241, 52, 83);
+}
+.yellow{
+    background-color: rgb(23, 84, 238);
+}
+.green{
+    background-color: rgb(105, 217, 105);
+}
+.purple{
+    background-color: rgb(235, 20, 235);
+}
