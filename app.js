@@ -19,13 +19,13 @@ function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
-    }, 300);
+    }, 400);
 }
 function userFlash(btn){
     btn.classList.add("userflash");
     setTimeout(function(){
         btn.classList.remove("userflash");
-    }, 100);
+    },200);
 }
 
 function levelUp(){
@@ -50,8 +50,10 @@ function checkAns(idx){
             setTimeout(levelUp, 1000);
         }
      }else{
-        h1.innerText=`Game Over! `;
+        h1.innerHTML=`Game Over! Your score was<b> ${level}</b> <br> Press any key to restart `;
+        reset();
      }
+
 
 
 }
@@ -68,4 +70,11 @@ function btnPress(){
 let allBtns = document.querySelectorAll(".btn");
 for(btn of allBtns){
     btn.addEventListener("click" ,btnPress);
+}
+function reset(){
+    started = false;
+    gameSeq =[];
+    userSeq =[];
+    level = 0;
+
 }
